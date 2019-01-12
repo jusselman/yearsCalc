@@ -35,10 +35,35 @@
     top: 5rem;
     left: 5rem; }
   .header__logo {
-    height: 6rem; }
-  .header__text-box {
-    position: absolute;
+    height: 4rem; }
+  .header__title-box {
+    position: relative;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  .header__year-input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10rem;
+    display: block;
+    border: none;
+    font-size: 3rem;
+    background: #6a0101;
+    color: #fff;
+    text-align: center; }
+  .header__year-input:focus {
+    outline: none; }
+  .header__btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    font-size: 2rem;
+    color: #6a0101;
+    background: #fff; }
+  .header__btn:focus {
+    outline: 0; }

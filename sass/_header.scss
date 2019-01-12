@@ -12,13 +12,46 @@
     left: 5rem;
   }
   &__logo {
-    height: 6rem;
+    height: 4rem;
   }
-  &__text-box {
-    position: absolute;
+  &__title-box {
+    position: relative;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  &__year-input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10rem;
+    display: block;
+    border: none;
+    font-size: 3rem;
+    background: rgb(106, 1, 1);
+    color: #fff;
+    text-align: center;
+  }
+
+  &__year-input:focus {
+    outline: none;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    font-size: 2rem;
+    color: rgb(106, 1, 1);
+    background: #fff;
+  }
+
+  &__btn:focus {
+    outline: 0;
   }
 }

@@ -1,64 +1,73 @@
-var joshua = {
-  name: 'Joshua',
-  yearOfBirth: 1985,
-  job: 'teacher'
-};
+// var joshua = {
+//   name: 'Joshua',
+//   yearOfBirth: 1985,
+//   job: 'teacher'
+// };
 
-var Person = function(name, yearOfBirth, job) {
-  this.name = name;
-  this.yearOfBirth = yearOfBirth;
-  this.job = job;
-  // this.calculateAge = function() {
-  //   console.log(2019 - this.yearOfBirth);
-  // }
-};
+// var Person = function(name, yearOfBirth, job) {
+//   this.name = name;
+//   this.yearOfBirth = yearOfBirth;
+//   this.job = job;
+//   // this.calculateAge = function() {
+//   //   console.log(2019 - this.yearOfBirth);
+//   // }
+// };
 
-Person.prototype.calculateAge = function() {
-  console.log(2019 - this.yearOfBirth);
-};
+// Person.prototype.calculateAge = function() {
+//   console.log(2019 - this.yearOfBirth);
+// };
 
-var john = new Person('John', 1990, 'teacher');
+// var john = new Person('John', 1990, 'teacher');
+// // john.calculateAge();
+
+// var joshua = new Person('Joshua', 1985, 'bleacher');
+
 // john.calculateAge();
+// joshua.calculateAge();
+// // console.log(joshua);
+// // console.log(john);
 
-var joshua = new Person('Joshua', 1985, 'bleacher');
+// var personProto = {
+//   calculateAge: function() {
+//     console.log(2019 - this.yearOfBirth);
+//   }
+// };
 
-john.calculateAge();
-joshua.calculateAge();
-// console.log(joshua);
-// console.log(john);
+// var juan = Object.create(personProto);
+// juan.name = 'Juan';
+// juan.yearOfBirth = '1980';
+// juan.job = 'Teacher';
 
-var personProto = {
-  calculateAge: function() {
-    console.log(2019 - this.yearOfBirth);
-  }
-};
+// var juanita = Object.create(personProto, {
+//   name: { value: 'Juanita' },
+//   yearOfBirth: { value: 1969 },
+//   job: { value: 'designer' }
+// });
 
-var juan = Object.create(personProto);
-juan.name = 'Juan';
-juan.yearOfBirth = '1980';
-juan.job = 'Teacher';
+// var years = [1900, 1969, 1985, 2001, 2018];
 
-var juanita = Object.create(personProto, {
-  name: { value: 'Juanita' },
-  yearOfBirth: { value: 1969 },
-  job: { value: 'designer' }
-});
+// function arrayCalc(arr, fn) {
+//   var arrRes = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     arrRes.push(fn(arr[i]));
+//   }
 
-var years = [1900, 1969, 1985, 2001, 2018];
+//   return arrRes;
+// }
 
-function arrayCalc(arr, fn) {
-  var arrRes = [];
-  for (var i = 0; i < arr.length; i++) {
-    arrRes.push(fn(arr[i]));
-  }
+// function calcAge(el) {
+//   return 2019 - el;
+// }
 
-  return arrRes;
-}
+// var ages = arrayCalc(years, calcAge);
 
-function calcAge(el) {
-  return 2019 - el;
-}
+// console.log(ages);
 
-var ages = arrayCalc(years, calcAge);
+// get the date //
+var now, year;
 
-console.log(ages);
+now = new Date();
+
+year = now.getFullYear;
+
+console.log(year);
