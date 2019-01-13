@@ -67,3 +67,12 @@
     background: #fff; }
   .header__btn:focus {
     outline: 0; }
+  .header__answer-display {
+    top: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: inherit; }
