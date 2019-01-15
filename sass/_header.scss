@@ -66,3 +66,13 @@
     font-family: inherit;
   }
 }
+
+.bgTrans {
+  height: 95vh;
+  // background-image: linear-gradient(to left, red, blue);
+  background-color: red;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-color: green;
+}

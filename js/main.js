@@ -16,4 +16,16 @@ var calcYears = function() {
 
   document.getElementById('diffDisplay').innerHTML =
     'This event happened ' + yearsDiff + ' years ago';
+
+  document.getElementById('header').className = 'bgTrans';
+
+  // bgHeader.classList.add('bgTrans');
 };
+
+// fire off event with enter key //
+document.getElementById('yearInput').addEventListener('keyup', function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById('btnSubmit').click();
+  }
+});
